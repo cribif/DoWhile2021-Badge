@@ -16,10 +16,24 @@ body {
   place-items: center;
 }
 
-main{
-  background: url(images/background.png);
-  width: 375px;
-  height: 812px;
+/* mobile */
+@media only screen and (max-width: 719px) {
+  main{
+    background: url(images/background.png) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
+}
+
+/* tablet and web */
+@media only screen and (min-width: 720px){
+  main {
+    background: url(images/backgroundWeb.png) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+  }
 }
 
 .container {
